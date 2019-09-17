@@ -33,7 +33,9 @@ profile| Allow authenticated users to add/edit their profile. url_prefix='/api/v
 
 ## online access
 
-To access the online version [heroku](https://world-bank-api.herokuapp.com/)
+To access the online version on Heroku
+1. User auth module [heroku](https://eesbs.herokuapp.com/api/v1/auth/)
+2. User profile module [heroku](https://eesbs.herokuapp.com/api/v1/profile/)
 
 ## Author
 
