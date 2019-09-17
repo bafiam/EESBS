@@ -10,7 +10,7 @@ from appConfig import initialize_app, db
 from app.api.auth.models import User
 from flask_cors import CORS
 from app.api.auth.utils.validations import validate_password_format
-eesbs_app = initialize_app(os.getenv('FLASK_ENV'))
+eesbs_app = initialize_app(os.getenv('FLASK_ENV')or 'development')
 
 CORS(eesbs_app)
 # Import a module / component using its blueprint handler variable (mod_auth)
