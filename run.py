@@ -8,8 +8,11 @@ from flask_script import Manager
 from flask_migrate import Migrate,MigrateCommand
 from appConfig import initialize_app, db
 from app.api.auth.models import User
+from flask_cors import CORS
 from app.api.auth.utils.validations import validate_password_format
 eesbs_app = initialize_app(os.getenv('FLASK_ENV'))
+
+CORS(eesbs_app)
 # Import a module / component using its blueprint handler variable (mod_auth)
 from app.api.auth.blueprint import mod_auth as auth_module
 from app.api.profile.blueprint import mod_profile as profile_module
