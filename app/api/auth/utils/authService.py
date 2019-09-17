@@ -120,7 +120,7 @@ def login_user(data):
         response_object = {
                         'status': 'success',
                         'message': 'Successfully logged in.',
-                        'Authorization': auth_token.decode('utf-8')
+                        'Authorization': auth_token
                     }
         return response_object, 201
     response_object = {
