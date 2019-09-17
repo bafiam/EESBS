@@ -26,10 +26,10 @@ This project is a basic overview of an backend api involving user authentication
 
 ## API Modules
 
-API Module | Functionality | Url_prefix
+API Module | Functionality 
 ------------ | -------------
-Auth| Provide user authentication using jwt token. | url_prefix='/api/v1/auth'
-profile| Allow authenticated users to add/edit their profile | url_prefix='/api/v1/profile'
+Auth| Provide user authentication using jwt token.url_prefix='/api/v1/auth'
+profile| Allow authenticated users to add/edit their profile. url_prefix='/api/v1/profile'
 
 ## online access
 
